@@ -1,0 +1,151 @@
+/* Reset básico para evitar inconsistencias */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Estilos generales del cuerpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Degradado atractivo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* Contenedor principal con sombra suave */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .container:hover {
+    transform: translateY(0);
+  }
+
+  /* Título principal */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2575fc;
+    font-weight: bold;
+  }
+
+  /* Descripción con contraste y animación */
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333; /* Color oscuro para buen contraste */
+    font-weight: 600;
+    animation: slideIn 1s ease-out;
+  }
+
+  /* Animación simple de deslizamiento */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Estilo del input para los segundos */
+  input {
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #f4f4f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+  }
+
+  /* Efecto al poner el foco en el input */
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.7); /* Azul vibrante */
+    border-color: #2575fc;
+  }
+
+  /* Estilo del botón */
+  button {
+    padding: 12px 24px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #6a11cb;
+  }
+
+#result {
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease-in-out;
+  font-family: 'Digital-7', monospace;
+}
+
+#result.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#timeResult {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animación para el resultado */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Digital-7&display=swap');
+
