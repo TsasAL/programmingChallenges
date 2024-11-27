@@ -9,7 +9,7 @@ Este repositorio está diseñado para fomentar el aprendizaje, la creatividad y 
 1. Revisa el reto del sprint en la carpeta `challenes/XX-challenge/`.
 2. Sigue las instrucciones del archivo `instrucciones.md` dentro de la carpeta del challenge.
 3. Resuelve el reto en tu lenguaje de preferencia.
-4. Haz un pull request para agregar tu solución.
+4. Crea una rama y subela para agregar tu solución.
 
 ## Reglas Básicas
 - Los retos son para aprender, no competir.
